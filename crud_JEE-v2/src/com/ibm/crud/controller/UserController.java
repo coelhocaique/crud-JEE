@@ -42,15 +42,7 @@ public class UserController extends HttpServlet {
 	private final String ADD = "/views/user/add.jsp";
 	private final String LIST = "/views/user/summary.jsp";
 	private final String EDIT = "/views/user/edit.jsp";
-<<<<<<< HEAD
-<<<<<<< HEAD
 	private final String DELETE = "/views/user/delete.jsp";
-=======
-	private final String UPDATE = "/views/user/update.jsp";
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
-	private final String UPDATE = "/views/user/update.jsp";
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 	
 	/**
 	 * UserController's Logger.
@@ -114,18 +106,12 @@ public class UserController extends HttpServlet {
 		} else if ("UPDATE".equalsIgnoreCase(ACTION)) {
 			logger.info("Action:[" + ACTION + "...]");
 			update(request, response);
-<<<<<<< HEAD
-<<<<<<< HEAD
 		} else if ("DELETE".equalsIgnoreCase(ACTION)) {
 			logger.info("Action:[" + ACTION + "...]");
 			delete(request, response);
 		}else if ("TRASH".equalsIgnoreCase(ACTION)) {
 			logger.info("Action:[" + ACTION + "...]");
 			trash(request, response);
-=======
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 		}
 	}
 
@@ -182,30 +168,12 @@ public class UserController extends HttpServlet {
 			final String PASSWORD = request.getParameter("password");
 
 			User user = new User();
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
-
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 			user.setPassword(PASSWORD);
 			user.setLogin(LOGIN);
 			userDao.insert(user);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 			request.setAttribute("userUpdated", user);
 			request.setAttribute("users", userDao.list());
-=======
-			request.setAttribute("user", user);
-			request.setAttribute("userInserted", userDao.list());
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
-			request.setAttribute("user", user);
-			request.setAttribute("userInserted", userDao.list());
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 			// If appears any issues, let's show it for our users from this web
 			// app
 		} catch (Exception e) {
@@ -249,8 +217,6 @@ public class UserController extends HttpServlet {
 
 			request.setAttribute("userUpdated", user);
 			request.setAttribute("users", userDao.list());
-<<<<<<< HEAD
-<<<<<<< HEAD
 		} catch (Exception e) {
 			e.printStackTrace();
 			getServletContext().getRequestDispatcher(ERROR).forward(request, response);
@@ -286,14 +252,6 @@ public class UserController extends HttpServlet {
 			request.setAttribute("userTrash", userTrash);
 			request.setAttribute("rowsAffected", rowsAffected);
 			request.setAttribute("users", userDao.list());
-=======
-			// If appears any issues, let's show it for our users from this web
-			// app
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
-			// If appears any issues, let's show it for our users from this web
-			// app
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 		} catch (Exception e) {
 			e.printStackTrace();
 			getServletContext().getRequestDispatcher(ERROR).forward(request, response);

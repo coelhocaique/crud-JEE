@@ -1,23 +1,8 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
-<<<<<<< HEAD
-<<<<<<< HEAD
-org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5
-org.eclipse.jdt.core.compiler.compliance=1.5
-org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
-org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
-org.eclipse.jdt.core.compiler.processAnnotations=enabled
-org.eclipse.jdt.core.compiler.source=1.5
-=======
-=======
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
 org.eclipse.jdt.core.compiler.compliance=1.8
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.processAnnotations=enabled
 org.eclipse.jdt.core.compiler.source=1.8
-<<<<<<< HEAD
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
-=======
->>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
