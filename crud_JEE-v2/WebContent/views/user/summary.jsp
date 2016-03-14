@@ -27,6 +27,7 @@
 		document.location.href = "${pageContext.request.contextPath}/logout";
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	function edit(login) {
 		document.location.href = "${pageContext.request.contextPath}/user?action=edit&login="
@@ -38,6 +39,8 @@
 				+ login;
 	}
 =======
+=======
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 	
 	function edit(login) {
 		document.location.href = "${pageContext.request.contextPath}/user?action=edit&login=" + login;
@@ -47,6 +50,9 @@
 		document.location.href = "${pageContext.request.contextPath}/user?action=delete&login=" + login;
 	}
 	
+<<<<<<< HEAD
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
+=======
 >>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 </script>
 </head>
@@ -60,6 +66,7 @@
 				sucesso no banco!
 			</div>
 		</c:if>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 		<c:if test="${userUpdated != null}">
@@ -81,6 +88,8 @@
 
 
 =======
+=======
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 		
 		<c:if test="${userUpdated != null}">
         <div class="alert alert-success" role="alert">
@@ -89,6 +98,9 @@
         </div>
         </c:if>  
         
+<<<<<<< HEAD
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
+=======
 >>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 		<h2>CRUD JEE</h2>
 
@@ -110,7 +122,10 @@
 					<strong>User Summary</strong>
 				</h4>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 =======
 >>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 				<p>
@@ -131,8 +146,14 @@
 										<td>${user.login}</td>
 										<td>${user.password}</td>
 <<<<<<< HEAD
+<<<<<<< HEAD
 										<td><a onclick="edit('${user.login}')">Edit</a>
 											 <a onclick="delet('${user.login}')">Delete</a>
+=======
+										<td>
+											<a onclick="edit('${user.login}')">Edit</a>
+											<a onclick="delet('${user.login}')">Delete</a>
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 =======
 										<td>
 											<a onclick="edit('${user.login}')">Edit</a>
@@ -147,6 +168,7 @@
 				</p>
 			</a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			
 			<div align="right">
 			
@@ -158,6 +180,8 @@
 						<li><a href="#">5</a></li>
 				</ul>
 			</div>
+=======
+>>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 =======
 >>>>>>> 268b3da343ec153a4ef8eeedab98a1447395d989
 
