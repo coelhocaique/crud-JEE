@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+	<display-name>crud JEE</display-name>
+	<welcome-file-list>
+		<welcome-file>/views/authentication/index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Mapping servlet and path -->
+	<servlet>
+		<servlet-name>ServletNoAnnotation</servlet-name>
+		<servlet-class>com.ibm.crud.servlet.ServletNoAnnotation</servlet-class>
+	</servlet>
+
+	<!-- Calling a servlet by URL -->
+	<servlet-mapping>
+		<servlet-name>ServletNoAnnotation</servlet-name>
+		<url-pattern>/ServletNoAnnotation</url-pattern>
+	</servlet-mapping>
+
+	<!-- Mapping servlet and path from UserController -->
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.ibm.crud.controller.UserController</servlet-class>
+	</servlet>
+
+	<!-- Calling a servlet by URL from UserController -->
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/user</url-pattern>
+	</servlet-mapping>
+
+	<!-- Page Not Found or Authorization Needed -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/views/404/404.jsp</location>
+	</error-page>
+</web-app>
